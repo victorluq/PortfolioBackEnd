@@ -1,0 +1,12 @@
+
+package com.vu.backend.repository;
+
+import com.vu.backend.entity.experiencia;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface Rexperiencia extends JpaRepository<experiencia, Integer>{
+    
+}
