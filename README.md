@@ -8,12 +8,12 @@ El portfolio funciona con login, donde el usuario registrado podrá modificar lo
 Sección Back End: 
 
 ## Instalación: 📲
-Para hacer la instalación y visualización del proyecto, debes tener instalado:
-💻 XAMPP Control Panel V.3.3.0. 
-💻 phpMyAdmin V.8.1.12.
-💻 Apache NetBeans IDE15 - V.2.4.54.
-💻 SpringBoot V.3.4.0.
-💻 Java V.8 - actualización 351.
+Para hacer la instalación y visualización del proyecto, debes tener instalado:<br>
+💻 XAMPP Control Panel V.3.3.0.<br>
+💻 phpMyAdmin V.8.1.12.<br>
+💻 Apache NetBeans IDE15 - V.2.4.54.<br>
+💻 SpringBoot V.3.4.0.<br>
+💻 Java V.8 - actualización 351.<br>
 
 ## Servidor: 💻
 Para correr el proyecto, se debe hacer "*run file*" en el archivo base (BackendApplication) o haciendolo predeterminado mediante configuración con opción de boton "*correr*". Para este proyecto back end, el servidor es el http://localhost:8080/ y como origin el http://localhost:4200.
