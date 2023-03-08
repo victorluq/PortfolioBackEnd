@@ -22,7 +22,6 @@ public class Saboutme {
     }
     
     public aboutme buscarAboutme(int id){
-        
         aboutme about = aboutmeRepo.findById(id).orElse(null);
         return about;
     }

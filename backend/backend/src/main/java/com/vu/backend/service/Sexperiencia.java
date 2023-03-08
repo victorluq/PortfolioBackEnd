@@ -38,5 +38,9 @@ public class Sexperiencia {
     public void editarExperiencia(experiencia about){
         expRepo.save(about);
     }
+
+    public void editarExperiencia(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

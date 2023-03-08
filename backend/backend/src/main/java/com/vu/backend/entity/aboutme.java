@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+ 
 @Entity
 public class aboutme {
     
@@ -47,11 +48,23 @@ public class aboutme {
     
     @Size(min = 1, max = 5000, message = "No cumple con la longitud")
     private String intro;
+    
+    @NotNull
+    private String cv;
+    
+    @NotNull
+    private String telefono;
+    
+    @NotNull
+    private String email;
+    
+    @NotNull
+    private String ubicacion;
 
     public aboutme() {
     }
 
-    public aboutme(String nombre, String apellido, String profesion, String imgperfil, String descripcion_habilidades, String descripcion_proyectos, String descripcion_contacto, String url_github, String url_linkedin, String intro) {
+    public aboutme(String nombre, String apellido, String profesion, String imgperfil, String descripcion_habilidades, String descripcion_proyectos, String descripcion_contacto, String url_github, String url_linkedin, String intro, String cv, String telefono, String email, String ubicacion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.profesion = profesion;
@@ -62,6 +75,10 @@ public class aboutme {
         this.url_github = url_github;
         this.url_linkedin = url_linkedin;
         this.intro = intro;
+        this.cv = cv;
+        this.telefono = telefono;
+        this.email = email;
+        this.ubicacion = ubicacion;
     }
 
     public int getId() {
@@ -151,6 +168,39 @@ public class aboutme {
     public void setIntro(String intro) {
         this.intro = intro;
     }
+    
+     public String getCv() {
+        return cv;
+    }
+
+    public void setCv(String cv) {
+        this.cv = cv;
+    }
+    
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+    
 
     
     
