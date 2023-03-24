@@ -26,19 +26,19 @@ public class Cproyectos {
     @Autowired
     Sproyectos proyServ;
     
-    @GetMapping("lista")
+    @GetMapping("/lista")
     @ResponseBody
     public List<proyectos> verProyectos(){
         return proyServ.verProyectos();
     }
     
-    @GetMapping("ver/{id}")
+    @GetMapping("/ver/{id}")
     @ResponseBody
     public proyectos verProyectos(@PathVariable int id){
         return proyServ.buscarProyectos(id);
     }
     
-    @PostMapping("crear")
+    @PostMapping("/crear")
     /* El "String" es porque va a retornar un String, en caso que
     no retorne nada se pone "void" */
     public String agregarProyectos (@RequestBody proyectos proy){
@@ -46,13 +46,13 @@ public class Cproyectos {
         return "El proyecto fue creado correctamente";
     }
     
-    @DeleteMapping("borrar/{id}")
+    @DeleteMapping("/borrar/{id}")
     public String eliminarProyectos(@PathVariable int id){
         proyServ.borrarProyectos(id);
         return "El proyecto se ha borrado correctamente";
     }
 
-    @PutMapping("editar")
+    @PutMapping("/editar")
     public String editarProyectos(@RequestBody proyectos proy){
         proyServ.editarProyectos(proy);
         return "El proyecto fue editado correctamente";
